@@ -1,0 +1,47 @@
+@import "src/Style/break-points";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  
+  @media screen and (max-width: $sm) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .copyright {
+    width: 1920px;
+    height: 72px;
+    padding: 20px 390px 20px 390px;
+    gap: 54px;
+    background: linear-gradient(0deg, #161616 0%, #161616 100%);
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $sm) {
+      display: none;
+      }
+    label {
+      width: 829px;
+      opacity: 0.5;
+      color: white;
+      font-size: 14px;
+      font-family: Montserrat;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 32px;
+      word-wrap: break-word;
+    }
+  }
+}

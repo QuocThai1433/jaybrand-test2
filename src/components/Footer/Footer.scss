@@ -1,0 +1,152 @@
+@import "src/Style/break-points";
+.footer {
+  width: 1920px;
+  height: 407px;
+  padding: 60px 390px 60px 390px;
+  background: linear-gradient(0deg, #161616 0%, #161616 100%);
+  @media screen and (max-width: $sm) {
+  display: none;
+  }
+  .container {
+    width: 1140px;
+    height: 287px;
+    gap: 120px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    &__left {
+      width: 393px;
+      height: 287px;
+      gap: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__center {
+      width: 279px;
+      height: 150px;
+      gap: 0px;
+      opacity: 0px;
+      color: White;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      flex: 1;
+      color: rgba(255, 255, 255, 1);
+      &-image {
+        width: 180.834px;
+        height: 69px;
+        object-fit: contain;
+      }
+    }
+  }
+  &__office {
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    align-self: stretch;
+    text-wrap: nowrap;
+  }
+  &__factory {
+    width: 393px;
+    height: 102px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    color: White;
+  }
+  &__factory-title {
+    width: 213px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    text-wrap: nowrap;
+    color: White;
+  }
+  &__factory-address {
+    width: 312px;
+    height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
+  &__company-name {
+    color: White;
+
+    width: 393px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
+  &__office-title {
+    width: 152px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: White;
+  }
+  &__office-address {
+    width: 402px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: White;
+  }
+  &__office-contact {
+    width: 268px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: White;
+  }
+
+  &__quick-links {
+    width: 279px;
+    height: 150px;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      text-wrap: nowrap;
+      color: White;
+    }
+    li {
+      color: var(--White, #fff);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: -0.24px;
+      text-transform: capitalize;
+      text-wrap: nowrap;
+    }
+  }
+}
