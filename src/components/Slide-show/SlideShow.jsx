@@ -4,6 +4,11 @@ import arrowRight from "../svg/arrow-right.svg";
 import { Button } from "../Button/Button";
 import arrowRightSlide from "./svg/aright-row.svg";
 import arrowLeftSlide from "./svg/left-row.svg";
+import iconFaceBook from "./svg/icon/icon-facebook.svg";
+import iconYoutube from "./svg/icon/icon-youtube.svg";
+import iconChat from "./svg/icon/icon-chat.svg";
+import iconTopArrow from "./svg/icon/arrow-top.svg";
+import { UpOutlined } from "@ant-design/icons";
 export const SlideShow = () => {
   const [activePoint, setActivePoint] = useState(2);
 
@@ -54,6 +59,23 @@ export const SlideShow = () => {
       <div className="arrow-container">
         <img src={arrowLeftSlide} alt="" />
         <img src={arrowRightSlide} alt="" />
+      </div>
+      <div className="icon-container">
+        <div className="facebook-container">
+          <img src={iconFaceBook} alt="" />
+        </div>
+        <div className="youtube-container">
+      
+          <img src={iconYoutube} alt="" />
+        </div>
+        <div className="chat-container">
+       
+          <img src={iconChat} alt="" />
+        </div>
+        <div className="top-arrow-container">
+          
+        <UpOutlined />
+        </div>
       </div>
     </div>
   );

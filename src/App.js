@@ -15,6 +15,7 @@ function App() {
         <label>© 2020 Bản quyền thuộc về HHK </label>
         <label>Facebook | Twitter | Zalo | LinkedIn</label>
       </div>
+    
     </div>
   );
 }

@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   background: url("../../images/back-ground-slide.png");
-  position: relative; // 1 cấp
+  position: relative;
   @media screen and (max-width: $sm) {
     width: 416px;
     height: 588.56px;
@@ -127,6 +127,60 @@
       width: 62px;
       height: 14.5px;
       flex-shrink: 0;
+    }
+  }
+  .icon-container {
+    position: absolute;
+
+    top: 635px;
+    left: 1857px;
+    width: 46px;
+    height: 220px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+    .facebook-container {
+      width: 46px;
+      height: 46px;
+      background: #4968b4;
+      border-radius: 9999px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    .youtube-container {
+      width: 46px;
+      height: 46px;
+      background: rgba(218, 0, 0, 1);
+      border-radius: 9999px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    .chat-container {
+      width: 46px;
+      height: 46px;
+      background: rgba(247, 183, 0, 1);
+      border-radius: 9999px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    .top-arrow-container {
+      width: 46px;
+      height: 46px;
+      background: rgba(235, 235, 235, 1);
+      color: rgba(51, 114, 183, 1);
+      border-radius: 9999px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

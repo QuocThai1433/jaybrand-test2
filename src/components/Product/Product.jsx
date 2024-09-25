@@ -4,9 +4,8 @@ import { Button } from "../Button/Button";
 import youtubeIcon from "../svg/btn-icon-youtube.svg";
 import iconProduct1 from "./svg-product/icon-product1.svg";
 import logo from "./images-product1/logo.png";
-import arrowRightPoduct4 from "../svg/ArrowRigth.svg"
-import arrowLeftPoduct4 from"../svg/ArrowLeft.svg"
-
+import arrowRightPoduct4 from "../svg/ArrowRigth.svg";
+import arrowLeftPoduct4 from "../svg/ArrowLeft.svg";
 
 import imgProduct1 from "./images-product2/1.png";
 import imgProduct2 from "./images-product2/2.png";
@@ -67,8 +66,10 @@ export const Product = () => {
               <div className="profile__background-icon">
                 <img src={iconProduct1} alt="" />
               </div>
-              <span className="profile__experience">+31</span>
-              <span className="profile__label">NĂM KINH NGHIỆM</span>
+              <div className="experience-title">
+                <span className="experience-title-step">+31</span>
+                <span className="experience-title-label">NĂM KINH NGHIỆM</span>
+              </div>
             </div>
             <div className="profile__citizens-container">
               <div className="profile__background-icon">
@@ -92,10 +93,13 @@ export const Product = () => {
         </div>
       </section>
       <section className="product__2">
-        <div className="cotainer">
+        <div className="container">
           <div className="info">
             <div className="info__header">
-              <span className="info__header__step">02</span>
+              <div className="line-step">
+                <div className="line"></div>
+                <span className="step">02</span>
+              </div>
               <span className="info__header__title">CÁC SẢN PHẨM HKK </span>
             </div>
             <span className="info__header__content">
@@ -182,9 +186,11 @@ export const Product = () => {
         <div className="container">
           <div className="info">
             <div className="info__header">
-              <span className="info__header-step">03</span>
+            <div className="line-step">
+                  <div className="line"></div>
+                  <span className="step">03</span>
+                </div>
               <div className="tintuc-container">
-
                 <span className="tintuc">TIN TỨC</span>
                 <span className="noibat">NỔI BẬT</span>
               </div>
@@ -267,7 +273,10 @@ export const Product = () => {
           <div className="info">
             <div className="info-header">
               <div className="info-title-group">
-                <span className="info-step">04</span>
+              <div className="line-step">
+                  <div className="line"></div>
+                  <span className="step">04</span>
+                </div>
                 <div className="info-doitac-contaner">
                   <span className="info-doitac">ĐỐI TÁC</span>
                   <span className="info-cuahkk">CỦA HKK</span>
@@ -307,9 +316,8 @@ export const Product = () => {
             </divc>
           </div>
           <div className="arrow-container">
-            <img src={arrowLeftPoduct4}alt="" />
-            <img src={arrowRightPoduct4}alt="" />
-
+            <img src={arrowLeftPoduct4} alt="" />
+            <img src={arrowRightPoduct4} alt="" />
           </div>
         </div>
       </section>

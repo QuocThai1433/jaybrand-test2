@@ -25,7 +25,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: $sm) {
+      display: flex;
+      flex-direction: row-reverse;
     
+    
+  }
     }
     .icon-menu {
       display: none;
